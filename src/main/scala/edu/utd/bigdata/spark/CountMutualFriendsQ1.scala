@@ -44,7 +44,7 @@ object CountMutualFriendsQ1 {
       .sortByKey()
 
     val result = mutualFriends.map(eachKeyVal => eachKeyVal._1 + "\t" + eachKeyVal._2.size)
-    result.collect().foreach(println)
+//    result.collect().foreach(println)
     result.saveAsTextFile(outputFile)
     //    mutualFriends.collect().foreach(println)
   }
